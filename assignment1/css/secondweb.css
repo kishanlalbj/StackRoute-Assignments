@@ -1,0 +1,37 @@
+header{
+	background-color: red;
+}
+nav li{
+	display: inline;
+}
+
+nav a,li{
+	text-decoration: none;
+	font-family: monospace;
+	color:#696969 ;
+	font-size: 20px;
+}
+nav a:hover{
+	color: black;
+}
+section img{
+	margin-top: 20px;
+	width: 300px;
+	height: 300px;
+	
+}
+section a:hover{
+	
+	opacity:0.4;
+
+}
+section {
+	font-family: monospace;
+	margin-top: 20px;
+	padding-left: 30px;
+	font-size: 40px;
+}
+
+
+
+
