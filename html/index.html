@@ -1,9 +1,413 @@
-<!Doctype html>
+<!DOCTYPE html>
+
 <html>
-<head>
-	<title>HTML assignments</title>
-</head>
-<body>
-<h1>HI I am Kishanlal<h1>
-</body>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	<body>
+	
+	<div class="container">
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+				</button>
+				<a class="navbar-brand" id="main" href="#"><img src="images/thumb.png" alt="logo" id="brand"></a>
+				
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Delivery</a></li>
+						<li><a href="#">Payment</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">More</li>
+						<li><a href="#">Publishers</a></li>
+						<li><a href="#">Sponsers</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Adventure</a></li>
+					<li><a href="#">Multiplayer</a></li>
+					<li><a href="#">Combact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sports<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Cricket</a></li>
+							<li><a href="#">Chess</a></li>
+							<li><a href="#">Foot Ball</a></li>
+							<li><a href="#">Tennis</a></li>
+						</ul>
+					</li>
+
+				</ul>
+				<form class="navbar-form pull-left">
+					<input type="text" name="text" class="form-control" placeholder="Search" id="searchInput">
+					<button type="submit" class="btn btn-default" value="Submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</form>
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span>  Profile</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+						</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="carousel slide" id="mycarousel">
+
+
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+			<li  data-slide-to="1" data-target="#mycarousel"></li>
+			<li  data-slide-to="2" data-target="#mycarousel"></li>
+			
+		</ol>
+
+
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+				
+					<div class="carousel-caption">
+						<h4>Buy Games Online</h4>
+							<p>Worlds Best Game at Cheapest Price</p>
+					</div>
+					
+				</div>
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Gaming Accessories</h4>
+							<p>Gaming Accessories for your Pc and XBox</p>
+					</div>
+					
+				</div>
+			
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Game Tutorials</h4>
+							<p>Watch and Play Games here</p>
+					</div>
+				</div>
+			</div>
+
+				<a class="left carousel-control" data-slide="prev" href="#mycarousel">
+					<span class="icon-prev"></span>
+				</a>
+
+				<a class="right carousel-control" data-slide="next" href="#mycarousel">
+					<span class="icon-next"></span>
+				</a>
+
+		</div>
+
+		<div class="row" id="bigCallOut">
+			<div class="col_12">
+				<div class="page-header">
+					<h1>Games for Sale <small>Genuine Original Games</small></h1>
+					<p class="lead"> Browse your favourite game.Pay online.Get your game and break the floor.</p>
+					<a href="#"<button type="button" class="btn btn-primary btn-large" id="alertMe">Large button</button></a>
+					
+				</div>
+			<div class="alert alert-success alert-block fade in" id="successAlert">
+				<button type="button" class="close" data-dismiss="alert">&times;
+
+				</button>
+				<h1>Success</h1>
+				<p>Clicked</p>
+			</div>
+			</div>
+			
+		</div>
+
+		<div class="row" id="featureHeading">
+			<div class="col-12">
+				<h2>Top Games</h2>
+				<p class="lead">Here are some top game picks exclusively for you.</p>
+			</div>
+			
+		</div>
+
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Batman : Akhram Knight</h3>
+					</div>
+					<img src="images/bat.jpg" alt="batch1" class="img-circle">
+					<p>Protect Gotham city with Bruce Wyne and Alfred.Stop Jokers Non-sense.</p>
+					<a href="" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span>Buy Now</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Assassin Creed : Syndicate</h3>
+					</div>
+					<img src="images/assassin.jpg" alt="batch3" class="img-circle">
+					<p>After the Adam's Apple. Find it before your brother do.Get it.Hit it.</p>
+					<a href="#register" class="btn btn-warning btn-block" data-toggle="modal">Register</a>
+						<div class="modal fade" id="register">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;
+										</button>
+										<h4 class="modal-title">Register</h4>	
+									</div>
+									<div class="modal-body">
+										<h4>Product Out of Stock</h4>
+											<p>Drop your name and email. we'll leyt you know when product back in stock.</p>
+										<form class="form-horizontal">
+											
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="Name">Name
+												</label>
+												<div class="col-lg-10">
+												<input class="form-control" type="text" name="Name" id="Name" placeholder="Your Name">
+												</div>												
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="eName">Email
+												</label>
+												<div class="col-lg-10">
+												<input class="form-control" type="text" name="eName" id="eName" placeholder="Your Email ID">
+												</div>												
+											</div>
+										</form>
+
+										
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-primary" type="button">Submit</button>
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Counter Strike</h3>
+					</div>
+					<img src="images/counter.jpg" alt="batch2" class="img-circle">
+					<p>Best multiplayer first person shooting game. Kill them all.Lead your team to success.</p>
+					<a href="" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Now</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Call Of Duty</h3>
+					</div>
+					<img src="images/call.jpg" alt="batch1" class="img-circle">
+					<p>Take the gun.Fight for your country with Caption Prince.</p>
+					<a href="" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span>Buy now</a>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Grand Theft Auto : San Anderas</h3>
+					</div>
+					<img src="images/gta.jpg" alt="batch1" class="img-circle">
+					<p>The city is all yours.Do what you want. Best open world game.</p>
+					<a href="" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Buy now</a>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Assassins Creed : Black Flag</h3>
+					</div>
+					<img src="images/black.jpg" alt="batch1" class="img-circle">
+					<p>Experience the Pirate Assassin. Kill Prince to acquire the kingdom.</p>
+					<a href="" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Now</a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6" id="portion1">
+				<h3>New Release</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Episodes</a></li>
+						<li><a href="#tab2" data-toggle="tab">Informations</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4>Welcome</h4>
+							<p>Hitman is a stealth video game series developed by the Danish company IO Interactive. Previously published by Eidos Interactive, and currently published by Square Enix, the series is available on Microsoft Windows as well as several video game consoles, including the Xbox, PlayStation 2, GameCube, Xbox 360 and PlayStation 3. The game series has since expanded into a novel, Hitman: Enemy Within written by William C. Dietz, followed by Hitman: Damnation which is an official prequel to the installment, Absolution, and a Hitman film adaptation in 2007, which is loosely based on the storyline of the games. The film was negatively received, but became a financial success. Another film, Hitman: Agent 47 was released in 2015, to negative reviews.
+
+</p>
+							
+						</div>
+						<div class="tab-pane" id="tab2">
+							<h4>Thanks</h4>
+							<p>
+
+								The story revolves around Agent 47 (usually simply referred to as "47" or "Mr. 47"), a cloned assassin-for-hire, whose flawless record places him in high demand among the wealthy and elite. The first original scriptwriter was Morten Iversen, who wrote the scripts for Hitman: Codename 47 and Hitman 2: Silent Assassin. He also contributed to Hitman: Contracts and Hitman: Blood Money. The games feature a mix of orchestral and electronica musical scores, composed by Jesper Kyd. A fifth installment of the series, Hitman: Absolution, was released on November 20, 2012. With it, a spin-off has been released for PC, PlayStation 3 and Xbox 360 called Hitman Sniper Challenge. For mobile and tablet, a spin-off game developed by Square Enix Montréal was released and it is a turn-based strategy game, called Hitman Go. There is another game released for mobile called Hitman: Sniper which has first person sniping gameplay.[1] The sixth game, titled Hitman, is slated to be released episodically, the first of which released in March of 2016.[2]</p>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>Popular in Industry</h3>
+				<div class="list-group" id="list">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">IO Interactive</h4>
+						<p class="list-group-item-text">The developer of Stealth Game Hitman series.</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">ETIOS</h4>
+						<p class="list-group-item-text">The company which developed hitman episodes recently.Currently the worlds best company</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">EA Sports</h4>
+						<p class="list-group-item-text">The leading sports game developer in the world. Games were more realistic.</p>
+					</a>					
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Steam</h4>
+						<p class="list-group-item-text">Buy games and play online by Joining Steam Community.</p>
+					</a>
+				</div>
+				
+			</div>	
+		</div>
+
+		
+	</div>
+
+	<div class="figure">
+		<img src="images/large1.jpg">
+		<div class="info">
+
+			<h3>Nerupu daaa</h3>
+			<p class="lead">Nerupu da..Nerungu da Papom...Adakuna Adangura aala ne..Iluthathum piriyura nool ah nee..sdjfhlkajdsflk jalkjfd lkdjf  lkdsjf lkajdf lkjalkfjlkdsajf lkadlkf jlkdsajf;lajdoif asadslifu odsa fiuds fijsad lkfj dsalkf lkdsaj flkasjd fads lkdf lkajds flkajdslkf sakd</p>
+		</div>	
+			
+		</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyrights &copy 2016 Kishanlal</h6>
+				</div>
+
+				<div class="col-sm-4">
+					<h6>About Us</h6>
+					<p>We are the global marketers of PC games.Officially Licensed and only genuine products are sold in this website.Incase of any problem or copyright violation you can report to the complaints.  </p>
+
+				</div>
+				
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Complaints</a></li>
+						<li><a href="#">Reference</a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h6>Follow us</h6>
+					<ul class="unstyled">
+						<li><a href="#"><img src="images/fb.png"> Facebook</a></li>
+						<li><a href="#"><img src="images/twit.png"> Twitter</a></li>
+						<li><a href="#"><img src="images/g.png"> Google Plus</a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					
+				</div>
+
+					
+				</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</footer>
+	
+	
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
 </html>
+
