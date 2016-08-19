@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="buttons">
+			<button class="btn btn-primary panel-button" type="button" id="myButton1" data-panelid="mypanel1">Do Something1</button>
+			<button class="btn btn-primary panel-button" type="button" id="myButton1"  data-panelid="mypanel2">Do Something2</button>
+			<button class="btn btn-primary panel-button" type="button" id="myButton1"  data-panelid="mypanel3">Do Something3</button>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-4 feature" id="mypanel1">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h4>Dancing Kite in Hurricane</h4>
+				</div>
+				<div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 feature" id="mypanel2">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>Go around</h4>
+					</div>
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 feature" id="mypanel3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4>Mama's gibrish</h4>
+						</div>
+						<div class="panel-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<script src="jquery/jquery310.js"></script>
+				<script>	
+					$(function(){
+						$('.panel-button').on('click',function(){
+						   var panelId=$(this).attr('data-panelid');
+						   // alert(panelId);
+						   $("#"+panelId+" .panel-body").html(" ");
+						});
+					});
+				</script>
+			</body>
+
+			</html>
