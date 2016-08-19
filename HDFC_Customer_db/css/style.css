@@ -1,0 +1,25 @@
+#buttons{
+	text-align: center;
+}
+body{
+	background-color: #DEE7E9;
+}
+#information{
+	padding-top: 50px;
+}
+tr td .edit{
+	display:none;
+}
+tr td.edit .edit{
+	display:initial;
+}
+tr td.edit .noedit{
+	display:none;
+}
+#heading{
+	background-color: red;
+}
+#row{
+	padding: 30px;
+}
+

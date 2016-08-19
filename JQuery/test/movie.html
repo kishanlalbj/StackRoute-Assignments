@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDB Movie Search</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="col-sm-12" id="header">
+        <h1>IMDB search</h1>    
+    </div>  
+    <div class="wrap">
+
+        <form class="col_4" id="form">
+            <input type="text" name="text" placeholder="Search" id="searchInput">
+            <button type="button" class="btn btn-default" id="mybutton"><span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
+
+        <div id="new">
+            <template id="movie-temp">
+                <div class="col-sm-7 pic" id="poster">
+                    <img src={{Poster}}></img>
+                </div>
+                <div class="col-sm-5 des" id="details"> 
+                    <p><Strong>Title :</Strong>{{Title}}</p><br>
+                    <p><Strong>Year :</Strong>{{Year}}</p><br>
+                    <p><Strong>IMDB ID :</Strong>{{imdbID}}</p><br>
+                </div>
+
+            </template>
+        </div>
+
+        <div class="container" id="master">
+            <div class="col_12" id="poster"> 
+                <h4>Everything about a movie is here...</h4>
+                <p lead>Search your favourite movies real fast..</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Copyrights &copy 2016 Kishanlal</h6>
+                <h6>All Rights Reserved by www.movierush.com</h6>
+            </div>
+
+            <div class="col-sm-4">
+                <h6>About Us</h6>
+                <p>We are the global marketers of PC games.Officially Licensed and only genuine products are sold in this website.Incase of any problem or copyright violation you can complaint to us.  </p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <h6>Navigation</h6>
+                <ul class="unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Complaints</a></li>
+                    <li><a href="#">Reference</a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h6>Follow us</h6>
+                <ul class="unstyled" id="social">
+                    <li><a href="#"><img src="images/fb.png"> Facebook</a></li>
+                    <li><a href="#"><img src="images/twit.png"> Twitter</a></li>
+                    <li><a href="#"><img src="images/g.png"> Google+</a></li>
+
+                </ul>
+                <h6>Coded by Kishanlalbj</h6>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</footer>
+<script src="jquery/jquery310.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/mustache.js"></script>
+</body>
+</html>

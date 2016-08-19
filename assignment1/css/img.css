@@ -1,0 +1,15 @@
+.container_12{
+	background-color:red;
+}
+nav li{
+	display: inline;
+}
+aside{
+	background-color: green;
+}
+header{
+	background-color: yellow;
+}
+.main{
+	margin-top: 30px;
+}
