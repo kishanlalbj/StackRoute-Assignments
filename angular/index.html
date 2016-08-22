@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <title>Angular Tutorial</title>
+</head>
+<body>
+    <div ng-controller="ctrl">
+
+        <input type="text" ng-model="first">
+        <input type="text" ng-model="second">
+        <button ng-click="updateValue()">Calculate</button>
+
+        {{calculation}}
+        <p>Its...{{first}}</p>
+
+        <!-- <div ng-include="'part1.html'"></div> -->
+        <label>
+        <input type="checkbox" ng-model="showlist ">
+        Strong
+        </label>
+        <ng-include src="getlist()"></ng-include>
+
+        <input type="text" ng-model="number" >
+        <div ng-switch="number">
+            <p ng-switch-when="1">Won First Prize</p>
+            <p ng-switch-when="2">Won second Prize</p>
+            <p ng-switch-when="3">Won Third Prize</p>
+            <p ng-switch-default> Sorry No Prize for you</p>
+
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
