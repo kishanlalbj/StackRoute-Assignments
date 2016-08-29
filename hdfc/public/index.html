@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDFC Bank : Personal Banking Site</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body ng-app="app" ng-controller="control">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/hdfc.png"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Loans <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Personal Loan</a></li>
+                <li><a href="#">Vehicle Loan</a></li>
+                <li><a href="#">Education Loan</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Make Payment</a></li>
+        <li><a href="#">Apply Online</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>   Admin</a></li>
+    </ul>
+    <form class="navbar-form pull-right">
+        <input type="text" name="name" class="form-control" placeholder="Customer Name" id="search" ng-model=keyword>
+        <button type="button" class="btn btn-default" value="submit" id="mybutton" ng-click="searching(keyword)"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="col-sm-12" id="buttons">
+    <div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" ng-click="viewAll()">
+                <span class="glyphicon glyphicon-list-alt"></span>  View All
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register" >
+                <span class="glyphicon glyphicon-plus-sign"></span> Add Customer
+            </button>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Customer Details</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="Name">Customer Name
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="Name" id="name" placeholder="Customer Name" ng-model="name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="customerID">Customer ID
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="customerID" id="customerID" placeholder="Customer ID" ng-model="customer_id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="gender">Gender
+                            </label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="gender" ng-model=gender>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="accountType">AccountType
+                            </label>
+                            <div class="col-sm-9">
+
+                                <select class="form-control" id="accountType" ng-model=account_type>
+                                    <option>Savings</option>
+                                    <option>Current</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="Balance">Balance
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="balance" id="balance" placeholder="Balance" ng-model=balance>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary" data-dismiss="modal" id="submit" ng-click=submit(name,customer_id,gender,account_type,balance) value="Add"></button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+<add-directive></add-directive>
+<my-directive></my-directive>
+
+<div class="container">
+    <button class="btn btn-default pull-left" id="previous">
+        <span class="glyphicon glyphicon-step-backward"></span>
+    </button>
+    <button class="btn btn-default pull-right" id="next">
+        <span class="glyphicon glyphicon-step-forward"> </span>
+    </button>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="js/script2.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+<script src="js/controllers.js" charset="utf-8"></script>
+</body>
+</html>
